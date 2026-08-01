@@ -1,7 +1,24 @@
 aid: relatableio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/relatableio.png
 name: Relatable.io
-description: Relatable.io is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Relatable is a Product Relationship Management (PRM) platform for the medical technology
+  and medical device industry, based in Nashville, Tennessee and backed by Techstars. Its Product Data
+  Catalog centralizes competitive product intelligence, its Guided Purchase Solution turns that data into
+  commercial insight, and 3rd-party data integrations sync external sources such as pricing intelligence.
+  The platform serves contracting (RFP responses), sales (business reviews), marketing (competitive
+  intelligence management), and technical support (product lookups). As of this enrichment pass Relatable
+  publishes no public developer API, OpenAPI, docs portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/relatableio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- MedTech
+- Medical Devices
+- Healthcare
+- Product Relationship Management
+- Competitive Intelligence
+- Data Integration
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/relatableio-domain-security.yml
 - type: Website
   url: https://relatable.io/
+- type: Blog
+  url: https://relatable.io/company/blog
+- type: Support
+  url: https://relatable.io/company/contact
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
